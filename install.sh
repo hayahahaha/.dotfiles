@@ -8,10 +8,10 @@ echo "Set up i3"
 sudo -s ~/.dotfiles/i3/config ~/.config/i3/config
 
 echo "Set up nvim"
-sudo -s ~/.dotfiles/nvim ~/.config/nvim
+cp -r ~/.dotfiles/nvim ~/.config/nvim
 
 echo "Set up kitty"
-sudo -s ~/.dotfiles/kitty ~/.config/kitty
+cp -r ~/.dotfiles/kitty ~/.config/kitty
 
 echo "Set up picom"
 sudo -s ~/.dotfiles/picom/picom.conf ~/.config/picom.conf
