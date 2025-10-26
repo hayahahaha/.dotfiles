@@ -1,5 +1,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.o.clipboard = 'unnamedplus'
+vim.o.swapfile = false
+
+-- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+-- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 
