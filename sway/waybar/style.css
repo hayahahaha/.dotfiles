@@ -1,0 +1,94 @@
+/* @define-color foreground #d4be98; */
+/* @define-color background #282828; */
+@define-color foreground #cdd6f4;
+@define-color background #181824;
+
+
+* {
+  background-color: @background;
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: Hack Nerd Font;
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button.focused {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+  opacity: 1;
+  /* border: 1px solid @foreground; */
+  border-bottom: 2px solid @foreground;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+  opacity: 0.7;
+}
+
+#workspaces button.empty {
+  opacity: 0.3;
+}
+
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#custom-expand-icon {
+  margin-right: 7px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+/* Waybar background */
+window#waybar {
+  background-color: @background;
+  color: #343434;
+}
+
+/* Workspaces */
+#workspaces {
+  background-color: @background;
+}
+
+#window {
+    background-color: @background;
+    color: @fg;
+    font-weight: normal;
+    padding: 0 12px;
+}
